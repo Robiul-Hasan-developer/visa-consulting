@@ -1,0 +1,24 @@
+/* ================================= Tab Css Start =========================== */
+.common-tab {
+    .nav-item {
+        .nav-link {
+            &.active {
+                color: hsl(var(--white)) !important; 
+                border-color: hsl(var(--main)) !important;
+            }
+            &:hover {
+                color: var(--main-600);
+            }
+        }
+    }
+}
+
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: transparent !important;
+    color: #1A4137 !important; 
+    font-weight: 600 !important;
+    border-bottom-color: #3D66F8;
+    border-radius: 0;
+}
+/* ================================= Tab Css End =========================== */
