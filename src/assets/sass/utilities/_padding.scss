@@ -241,6 +241,9 @@
     }
 }
 /* ================================= Padding Css End =========================== */
+.tw-px-54-px {
+    padding-inline: clamp(1rem, -6.1013rem + 9.4763vw, 3.375rem);
+}
 
 .tw-px-60-px {
   padding-left: clamp(1.25rem, -1.7928rem + 6.3391vw, 3.75rem);
