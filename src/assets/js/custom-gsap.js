@@ -334,40 +334,38 @@ buttonElements.forEach((buttonElement) => {
 });
 // **************************** Position Aware button hover js End ****************************
 
-// **************************** split Reveal js Start ****************************
-if ($(".split-reveal").length) {
-  let revealContainers = document.querySelectorAll(".split-reveal");
+// **************************** Hover Parallax animation js Start ****************************
+var hoverBtns = gsap.utils.toArray(".hover-parallax-wrapper");
+const hoverBtnItem = gsap.utils.toArray(".hover-parallax-item");
+hoverBtns.forEach((btn, i) => {
+  $(btn).mousemove(function (e) {
+    callParallax(e);
+  });
 
-  revealContainers.forEach((container) => {
-    let splitElement = container.querySelector(".split-reveal-element");
+  function callParallax(e) {
+    parallaxIt(e, hoverBtnItem[i], 60);
+  }
 
-    let tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: container,
-        toggleActions: "play none none none",
-      },
+  function parallaxIt(e, target, movement) {
+    var $this = $(btn);
+    var relX = e.pageX - $this.offset().left;
+    var relY = e.pageY - $this.offset().top;
+
+    gsap.to(target, 1, {
+      x: ((relX - $this.width() / 2) / $this.width()) * movement,
+      y: ((relY - $this.height() / 2) / $this.height()) * movement,
+      ease: Power2.easeOut,
     });
-
-    tl.set(container, {
-      autoAlpha: 1,
-    });
-
-    tl.from(container, {
-      duration: 1,
-      xPercent: -100,
-      ease: Power2.out,
-    });
-
-    tl.from(splitElement, {
-      duration: 1,
-      xPercent: 100,
-      scale: 1,
-      delay: -1,
-      ease: Power2.out,
+  }
+  $(btn).mouseleave(function (e) {
+    gsap.to(hoverBtnItem[i], 1, {
+      x: 0,
+      y: 0,
+      ease: Power2.easeOut,
     });
   });
-}
-// **************************** split Reveal js End ****************************
+});
+// **************************** Hover Parallax animation js End ****************************
 
 /* **************************************************************************** 
                           Custom GSAP js start 

@@ -114,6 +114,9 @@
     &-two {
         &:hover, &:active {
             color: var(--main-two-600) !important;
+            i {
+                color: var(--main-two-600) !important;
+            }
             &.button--stroke {
                 &::after {
                     border-color: transparent;
