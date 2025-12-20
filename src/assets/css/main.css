@@ -306,6 +306,10 @@
     font-family: "Phosphor";
     background-image: none;
     font-size: 20px;
+    top: 50%;
+    position: absolute;
+    inset-inline-end: 24px;
+    transform: translateY(-50%);
 }
 
 .accordion-button:not(.collapsed)::after {
@@ -328,6 +332,10 @@
     background-color: #00CC99 !important;
     color: #fff !important;
     border-color: #00CC99;
+}
+
+.accordion-button {
+    border-radius: inherit;
 }
 
 /* ================================= Accordion Css End =========================== */
@@ -7350,6 +7358,10 @@ input:focus, input:focus-visible {
     transition: 0.4s;
 }
 
+.transition-timing-linear {
+    transition-timing-function: linear;
+}
+
 /* transition Css Class End */
 .tw-duration-75 {
     transition-duration: 75ms;
@@ -8020,6 +8032,44 @@ input:focus, input:focus-visible {
     outline: 0;
 }
 
+/* Swiper slider css start */
+.left-right-gradient::before,
+.left-right-gradient::after {
+    position: absolute;
+    content: "";
+    width: 70px;
+    height: 100%;
+    inset-inline-start: 0;
+    inset-block-start: 0;
+    background: linear-gradient(90deg, var(--neutral-50), transparent);
+    z-index: 2;
+}
+
+.left-right-gradient::after {
+    background: linear-gradient(90deg, transparent, var(--neutral-50));
+    inset-inline-start: auto;
+    inset-inline-end: 0;
+}
+
+.top-bottom-gradient::before,
+.top-bottom-gradient::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 120px;
+    inset-inline-start: 0;
+    inset-block-start: 0;
+    background: linear-gradient(180deg, var(--main-two-600), transparent);
+    z-index: 2;
+}
+
+.top-bottom-gradient::after {
+    background: linear-gradient(180deg, transparent, var(--main-two-600));
+    inset-block-start: auto;
+    inset-block-end: 0;
+}
+
+/* Swiper slider css end */
 /* ================================= preload Css Start =========================== */
 .loader-mask {
     position: fixed;
