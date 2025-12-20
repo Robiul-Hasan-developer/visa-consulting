@@ -255,6 +255,72 @@
 
 
 
+
+     // ========================= Range Slider Js Start =====================
+    $(document).ready(function () {
+      var $rangeInput = $(".range-input input"),
+        $priceInput = $(".price-input input"),
+        $range = $(".slider .progressbar"),
+        priceGap = 1000;
+
+      // Update the range and price inputs when the price input fields change
+      $priceInput.on("input", function () {
+        var minPrice = parseInt($priceInput.eq(0).val(), 10),
+          maxPrice = parseInt($priceInput.eq(1).val(), 10);
+
+        if (
+          maxPrice - minPrice >= priceGap &&
+          maxPrice <= parseInt($rangeInput.eq(1).attr("max"), 10)
+        ) {
+          if ($(this).hasClass("input-min")) {
+            $rangeInput.eq(0).val(minPrice);
+            $range.css(
+              "inset-inline-start",
+              (minPrice / parseInt($rangeInput.eq(0).attr("max"), 10)) * 100 +
+                "%"
+            );
+          } else {
+            $rangeInput.eq(1).val(maxPrice);
+            $range.css(
+              "inset-inline-end",
+              100 -
+                (maxPrice / parseInt($rangeInput.eq(1).attr("max"), 10)) * 100 +
+                "%"
+            );
+          }
+        }
+      });
+
+      // Update the price input fields and range visual when the range slider is dragged
+      $rangeInput.on("input", function () {
+        var minVal = parseInt($rangeInput.eq(0).val(), 10),
+          maxVal = parseInt($rangeInput.eq(1).val(), 10);
+
+        if (maxVal - minVal < priceGap) {
+          if ($(this).hasClass("range-min")) {
+            $rangeInput.eq(0).val(maxVal - priceGap);
+          } else {
+            $rangeInput.eq(1).val(minVal + priceGap);
+          }
+        } else {
+          $priceInput.eq(0).val(minVal);
+          $priceInput.eq(1).val(maxVal);
+          $range.css(
+            "inset-inline-start",
+            (minVal / parseInt($rangeInput.eq(0).attr("max"), 10)) * 100 + "%"
+          );
+          $range.css(
+            "inset-inline-end",
+            100 -
+              (maxVal / parseInt($rangeInput.eq(1).attr("max"), 10)) * 100 +
+              "%"
+          );
+        }
+      });
+    });
+    // ========================= Range Slider Js End =====================
+
+
     // // ================================= Brand slider Start =========================
     var brandSlider = new Swiper('.brand-bottom-slider', {
       speed: 1500,
@@ -297,6 +363,7 @@
       },
     });
     // // ================================= About Their End =========================
+    
     // // ================================= About Their Start =========================
     var brandSlider = new Swiper('.about-their-two-slider', {
       speed: 1500,
@@ -310,6 +377,126 @@
       },
     });
     // // ================================= About Their End =========================
+
+
+
+
+    // =========================== country three js start ==========================
+    var aboutTwoThumbsSliderOne = new Swiper(".about-two-thumbs-slider-one", {
+      slidesPerView: 3,
+      grabCursor: true,
+      loop: true,
+      centeredSlides: true,
+      direction: "vertical",
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      speed: 6000,
+      autoplay: {
+        delay: 0,
+        enabled: true,
+      },
+    });
+
+    var aboutTwoThumbsSliderTwo = new Swiper(".about-two-thumbs-slider-two", {
+      slidesPerView: 3,
+      grabCursor: true,
+      loop: true,
+      centeredSlides: true,
+      direction: "vertical",
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      speed: 6000,
+      autoplay: {
+        delay: 0,
+        enabled: true,
+        reverseDirection: true,
+        disableOnInteraction: false,
+      },
+    });
+
+    var aboutThreeThumbsSliderThree = new Swiper(".about-three-thumbs-slider-three", {
+      slidesPerView: 3,
+      grabCursor: true,
+      loop: true,
+      centeredSlides: true,
+      direction: "vertical",
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      speed: 6000,
+      autoplay: {
+        delay: 0,
+        enabled: true,
+      },
+    });
+    // =========================== country three js end ==========================
+
+
+
+    // ======================== brand js start =========================
+       var brandSlider = new Swiper(".brand-slider", {
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      autoplay: true,
+      speed: 1500,
+      grabCursor: true,
+      spaceBetween: 20,
+      loop: true,
+      slidesPerView: 6,
+      breakpoints: {
+        300: {
+          slidesPerView: 2,
+        },
+        575: {
+          slidesPerView: 3,
+        },
+        768: {
+          slidesPerView: 4,
+        },
+        992: {
+          slidesPerView: 5,
+        },
+        1200: {
+          slidesPerView: 6,
+        },
+      },
+    });
+
+    // ======================== brand js end =========================
+
+
+
+    // ======================== discount tab js start =====================
+    var discountTabSlider = new Swiper(".discount-tab-slider", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      speed: 3000,
+      grabCursor: true,
+      loop: true,
+      autoplay: true,
+      breakpoints: {
+        0: {
+          slidesPerView: 1, // Mobile default
+        },
+        992: {
+          slidesPerView: 1,
+        },
+        1199: {
+          slidesPerView: 2,
+        },
+        1499: {
+          slidesPerView: 3,
+        },
+      },
+    });
+    // ======================== discount tab js end =====================
 
 
     // ============================== features two js start ==========================

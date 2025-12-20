@@ -228,12 +228,21 @@ animation: rotateRight 30s linear infinite;
 }
 
 @keyframes rotateRight {
-0% {
-  transform: rotate(0deg);
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
-100% {
-  transform: rotate(360deg);
-}
+
+@keyframes rotateLeft {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
 }
 
 @keyframes floatAnimation {
@@ -250,6 +259,10 @@ animation: rotateRight 30s linear infinite;
 
 .animated-upDown {
 animation: floatAnimation 3s ease-in-out infinite;
+}
+
+.animation-rotate-left {
+  animation: rotateLeft 30s linear infinite;
 }
 
 

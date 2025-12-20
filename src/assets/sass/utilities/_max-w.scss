@@ -203,11 +203,30 @@
     &-1760-px {
         max-width: 1760px;
     }
+
+    &-1800-px {
+        max-width: 1800px;
+    }
+
+    &-2020-px {
+        max-width: 2020px;
+    }
 }
 
 /* Max width Css Class End */
 .media-flex-warp-1258-px {
     @media (max-width: 1258px) {
         flex-wrap: wrap;
+    }
+}
+.media-max-w-100-persent {
+    max-width: 125px;
+    @media (max-width: 404px) {
+        max-width: 100%;
+    }
+}
+.media-sm-max-w-100-persent {
+    @media (max-width: 575px) {
+        max-width: 100%;
     }
 }
