@@ -17,6 +17,16 @@
     inset-inline-end: 0;
 }
 
+.gradient-start-white {
+    &::before {
+        background: linear-gradient(270deg, transparent, #fff);
+    }
+
+    &::after {
+        background: linear-gradient(90deg, transparent, #fff);
+    }
+}
+
 
 .top-bottom-gradient::before,
 .top-bottom-gradient::after {
@@ -35,4 +45,5 @@
     inset-block-start: auto;
     inset-block-end: 0;
 }
+
 /* Swiper slider css end */

@@ -1,0 +1,34 @@
+/* ======================== brand section start ======================== */
+.brand-grid-wrapper {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: #ddd;
+        inset-block-start: 50%;
+        transform: translateY(-50%);
+        inset-inline-start: 0;
+    }
+}
+
+.brand-grid__item {
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-inline-end: 1px solid #ddd;
+
+    &:nth-child(6n) {
+        border-inline-end: 0;
+    }
+
+    @media (min-width: 1200px) {
+        height: 200px;
+    }
+}
+
+/* ======================== brand section end ======================== */
