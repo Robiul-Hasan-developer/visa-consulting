@@ -251,12 +251,7 @@
     });
     // ========================= AOS Js End ===========================
 
-
-
-
-
-
-     // ========================= Range Slider Js Start =====================
+    // ========================= Range Slider Js Start =====================
     $(document).ready(function () {
       var $rangeInput = $(".range-input input"),
         $priceInput = $(".price-input input"),
@@ -320,9 +315,8 @@
     });
     // ========================= Range Slider Js End =====================
 
-
     // // ================================= Brand slider Start =========================
-    var brandSlider = new Swiper('.brand-bottom-slider', {
+    var brandSlider = new Swiper(".brand-bottom-slider", {
       speed: 1500,
       grabCursor: true,
       loop: true,
@@ -335,7 +329,7 @@
     });
     // // ================================= Brand slider End =========================
     // // ================================= Brand slider Start =========================
-    var brandSlider = new Swiper('.brand-bottom-slider', {
+    var brandSlider = new Swiper(".brand-bottom-slider", {
       speed: 1500,
       grabCursor: true,
       loop: true,
@@ -348,10 +342,8 @@
     });
     // // ================================= Brand slider End =========================
 
-
-
     // // ================================= About Their Start =========================
-    var brandSlider = new Swiper('.about-their-two-slider', {
+    var brandSlider = new Swiper(".about-their-two-slider", {
       speed: 1500,
       grabCursor: true,
       loop: true,
@@ -363,9 +355,9 @@
       },
     });
     // // ================================= About Their End =========================
-    
+
     // // ================================= About Their Start =========================
-    var brandSlider = new Swiper('.about-their-two-slider', {
+    var brandSlider = new Swiper(".about-their-two-slider", {
       speed: 1500,
       grabCursor: true,
       loop: true,
@@ -377,9 +369,6 @@
       },
     });
     // // ================================= About Their End =========================
-
-
-
 
     // =========================== country three js start ==========================
     var aboutTwoThumbsSliderOne = new Swiper(".about-two-thumbs-slider-one", {
@@ -418,28 +407,29 @@
       },
     });
 
-    var aboutThreeThumbsSliderThree = new Swiper(".about-three-thumbs-slider-three", {
-      slidesPerView: 3,
-      grabCursor: true,
-      loop: true,
-      centeredSlides: true,
-      direction: "vertical",
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      speed: 6000,
-      autoplay: {
-        delay: 0,
-        enabled: true,
-      },
-    });
+    var aboutThreeThumbsSliderThree = new Swiper(
+      ".about-three-thumbs-slider-three",
+      {
+        slidesPerView: 3,
+        grabCursor: true,
+        loop: true,
+        centeredSlides: true,
+        direction: "vertical",
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        speed: 6000,
+        autoplay: {
+          delay: 0,
+          enabled: true,
+        },
+      }
+    );
     // =========================== country three js end ==========================
 
-
-
     // ======================== brand js start =========================
-       var brandSlider = new Swiper(".brand-slider", {
+    var brandSlider = new Swiper(".brand-slider", {
       autoplay: {
         delay: 2000,
         disableOnInteraction: false,
@@ -471,8 +461,6 @@
 
     // ======================== brand js end =========================
 
-
-
     // ======================== discount tab js start =====================
     var discountTabSlider = new Swiper(".discount-tab-slider", {
       slidesPerView: 3,
@@ -497,7 +485,6 @@
       },
     });
     // ======================== discount tab js end =====================
-
 
     // ============================== features two js start ==========================
     var swiper = new Swiper(".features-two-slider", {
@@ -529,7 +516,6 @@
     });
     // ============================== features two js end ==========================
 
-
     // ========================= magnific Popup Js Start =====================
     $(".play-button").magnificPopup({
       type: "iframe",
@@ -537,8 +523,6 @@
       mainClass: "mfp-fade",
     });
     // ========================= magnific Popup Js End =====================
-
-
 
     /*===========================================
 	=         Marquee Active         =
@@ -560,7 +544,7 @@
 =         Marquee Active         =
   =============================================*/
 
-  // ================================ Floating Progress js start =================================
+    // ================================ Floating Progress js start =================================
     const progressContainers = document.querySelectorAll(".progress-container");
 
     function setPercentage(progressContainer) {
@@ -604,6 +588,12 @@
     });
     // ================================ Floating Progress js End =================================
 
+    // ========================== Add Attribute For Bg Image Js Start ====================
+    $(".background-img").css("background", function () {
+      var bg = "url(" + $(this).data("background-image") + ")";
+      return bg;
+    });
+    // ========================== Add Attribute For Bg Image Js End =====================
   });
   // ==========================================
   //      End Document Ready function

@@ -5773,6 +5773,10 @@ input:focus, input:focus-visible {
     max-width: 1760px;
 }
 
+.max-w-1786-px {
+    max-width: 1786px;
+}
+
 .max-w-1800-px {
     max-width: 1800px;
 }
@@ -6926,6 +6930,10 @@ input:focus, input:focus-visible {
 
 .tw-py-180-px {
     padding-block: clamp(6.25rem, 0.1644rem + 12.6783vw, 11.25rem);
+}
+
+.tw-pt-160-px {
+    padding-block-start: 160px;
 }
 
 @media (max-width: 1399px) {
