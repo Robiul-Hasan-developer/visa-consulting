@@ -5385,6 +5385,10 @@ input:focus, input:focus-visible {
     }
 }
 
+.tw-mb--20-px {
+    margin-bottom: -20px;
+}
+
 .tw-mb--12-px {
     margin-bottom: -12px;
 }
@@ -6936,6 +6940,10 @@ input:focus, input:focus-visible {
     padding-block-start: 160px;
 }
 
+.tw-pb-140-px {
+    padding-block-end: 140px;
+}
+
 @media (max-width: 1399px) {
     .tw-media-1399-px {
         justify-content: center;
@@ -7141,6 +7149,11 @@ input:focus, input:focus-visible {
 .tw-rounded-4xl {
     border-radius: 2rem;
   /* 32px */
+}
+
+.tw-rounded-5xl {
+    border-radius: 2.5rem;
+  /* 40px */
 }
 
 /* Border Radius Css End */
@@ -8802,6 +8815,12 @@ input[type=range]::-moz-range-thumb:hover {
 }
 
 /* Range slider End */
+/* Booking form css start */
+.w-400-px {
+    width: 400px;
+}
+
+/* Booking form css end */
 /* ================================== rtl css start ================================== */
 .text-start {
     text-align: start !important;

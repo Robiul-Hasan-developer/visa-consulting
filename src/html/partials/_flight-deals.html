@@ -1,37 +1,80 @@
 <!-- ========================= flight deals section start ========================= -->
-<div class=" tw-mb-11">
+<div class="overflow-hidden">
     <div class="container max-w-1400-px">
-        <div class="d-flex align-items-center tw-gap-4 flex-wrap justify-content-between">
+        <div class="d-flex align-items-center tw-gap-4 flex-wrap justify-content-between tw-mb-11">
             <h2 class="fw-medium text-neutral-900">
-                FLight hot deals
+                Flight hot deals
             </h2>
-            <ul class="nav nav-pills nav-pills-two d-flex align-items-center tw-gap-3 flex-wrap bg-white rounded-pill tw-py-2 tw-px-5" id="pills-tab" role="tablist">
+            <ul class="nav nav-pills nav-pills-two d-flex align-items-center tw-gap-3 flex-wrap bg-white rounded-pill tw-py-2 tw-px-5"
+                id="pills-tab" role="tablist">
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link nav-link-two active fw-medium tw-text-405 text-black d-flex align-items-center tw-gap-105 tw-py-1 tw-px-6" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all" aria-selected="true">
+                    <button
+                        class="rounded-pill nav-link nav-link-two active fw-medium tw-text-405 text-black d-flex align-items-center tw-gap-105 tw-py-1 tw-px-6"
+                        id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all" type="button" role="tab"
+                        aria-controls="pills-all" aria-selected="true">
                         All
                     </button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link nav-link-two fw-medium tw-text-405 text-black d-flex align-items-center tw-gap-105 tw-py-1 tw-px-6" id="pills-flight-tab" data-bs-toggle="pill" data-bs-target="#pills-flight" type="button" role="tab" aria-controls="pills-flight" aria-selected="true">
+                    <button
+                        class="rounded-pill nav-link nav-link-two fw-medium tw-text-405 text-black d-flex align-items-center tw-gap-105 tw-py-1 tw-px-6"
+                        id="pills-flight-tab" data-bs-toggle="pill" data-bs-target="#pills-flight" type="button"
+                        role="tab" aria-controls="pills-flight" aria-selected="true">
                         Flight
                     </button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link nav-link-two fw-medium tw-text-405 text-black d-flex align-items-center tw-gap-105 tw-py-1 tw-px-6" id="pills-hotel-tab" data-bs-toggle="pill" data-bs-target="#pills-hotel" type="button" role="tab" aria-controls="pills-hotel" aria-selected="false">
+                    <button
+                        class="rounded-pill nav-link nav-link-two fw-medium tw-text-405 text-black d-flex align-items-center tw-gap-105 tw-py-1 tw-px-6"
+                        id="pills-hotel-tab" data-bs-toggle="pill" data-bs-target="#pills-hotel" type="button"
+                        role="tab" aria-controls="pills-hotel" aria-selected="false">
                         Hotel
                     </button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link nav-link-two fw-medium tw-text-405 text-black d-flex align-items-center tw-gap-105 tw-py-1 tw-px-6" id="pills-tours-tab" data-bs-toggle="pill" data-bs-target="#pills-tours" type="button" role="tab" aria-controls="pills-tours" aria-selected="false">
+                    <button
+                        class="rounded-pill nav-link nav-link-two fw-medium tw-text-405 text-black d-flex align-items-center tw-gap-105 tw-py-1 tw-px-6"
+                        id="pills-tours-tab" data-bs-toggle="pill" data-bs-target="#pills-tours" type="button"
+                        role="tab" aria-controls="pills-tours" aria-selected="false">
                         Tour
                     </button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link nav-link-two d-flex align-items-center tw-gap-105 fw-medium tw-text-405 text-black tw-py-1 tw-px-6" id="pills-others-tab" data-bs-toggle="pill" data-bs-target="#pills-others" type="button" role="tab" aria-controls="pills-others" aria-selected="false">
+                    <button
+                        class="rounded-pill nav-link nav-link-two d-flex align-items-center tw-gap-105 fw-medium tw-text-405 text-black tw-py-1 tw-px-6"
+                        id="pills-others-tab" data-bs-toggle="pill" data-bs-target="#pills-others" type="button"
+                        role="tab" aria-controls="pills-others" aria-selected="false">
                         Others
                     </button>
                 </li>
             </ul>
+        </div>
+    </div>
+
+    <div class="d-flex align-items-center justify-content-center">
+        <div class="cotnainer max-w-1800-px w-100">
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab"
+                    tabindex="0">
+                    @@include('../partials/_flight-deals-tab.html')
+                </div>
+                <div class="tab-pane fade" id="pills-flight" role="tabpanel" aria-labelledby="pills-flight-tab"
+                    tabindex="0">
+                    @@include('../partials/_flight-deals-tab.html')
+                </div>
+                <div class="tab-pane fade" id="pills-hotel" role="tabpanel" aria-labelledby="pills-hotel-tab"
+                    tabindex="0">
+                    @@include('../partials/_flight-deals-tab.html')
+                </div>
+                <div class="tab-pane fade" id="pills-tours" role="tabpanel" aria-labelledby="pills-tours-tab"
+                    tabindex="0">
+                    @@include('../partials/_flight-deals-tab.html')
+                </div>
+                <div class="tab-pane fade" id="pills-others" role="tabpanel" aria-labelledby="pills-others-tab"
+                    tabindex="0">
+                    @@include('../partials/_flight-deals-tab.html')
+                </div>
+            </div>
         </div>
     </div>
 </div>

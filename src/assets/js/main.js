@@ -594,6 +594,23 @@
       return bg;
     });
     // ========================== Add Attribute For Bg Image Js End =====================
+
+    // ========================= Increment & Decrement Js Start =====================
+    $(document).on("click", ".increment-btn", function () {
+      const $input = $(this).siblings(".input-value");
+      let count = parseInt($input.val(), 10);
+      $input.val(count + 1);
+    });
+
+    $(document).on("click", ".decrement-btn", function () {
+      const $input = $(this).siblings(".input-value");
+      let count = parseInt($input.val(), 10);
+      if (count > 0) {
+        $input.val(count - 1);
+      }
+    });
+    // ========================= Increment & Decrement Js End =====================
+    
   });
   // ==========================================
   //      End Document Ready function
