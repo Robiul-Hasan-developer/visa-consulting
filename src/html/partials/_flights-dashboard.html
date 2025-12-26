@@ -9,28 +9,63 @@
                 We specialize in providing high-quality plumbing solutions for your home or <br>
                 business. Our experienced team is committed to resolving
             </p>
-            <ul class="nav nav-pills nav-pills-two d-flex align-items-center tw-gap-3 justify-content-center flex-wrap" id="pills-tab" role="tablist">
+            <ul class="nav nav-pills nav-pills-two d-flex align-items-center tw-gap-3 justify-content-center flex-wrap"
+                id="pills-tabTen" role="tablist">
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link nav-link-two active fw-medium tw-text-405 text-black d-flex align-items-center tw-gap-105 tw-py-1 tw-px-6 border-neutral-300 border rounded-pill" id="pills-dashboard-tab" data-bs-toggle="pill" data-bs-target="#pills-dashboard" type="button" role="tab" aria-controls="pills-dashboard" aria-selected="true">
+                    <button
+                        class="nav-link nav-link-two active fw-medium tw-text-405 text-black d-flex align-items-center tw-gap-105 tw-py-1 tw-px-6 border-neutral-300 border rounded-pill"
+                        id="pills-dashboardSix-tab" data-bs-toggle="pill" data-bs-target="#pills-dashboardSix" type="button"
+                        role="tab" aria-controls="pills-dashboardSix" aria-selected="true">
                         09:45 PM
                     </button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link nav-link-two fw-medium tw-text-405 text-black d-flex align-items-center tw-gap-105 tw-py-1 tw-px-6 border-neutral-300 border rounded-pill" id="pills-flight-three-tab" data-bs-toggle="pill" data-bs-target="#pills-flight-three" type="button" role="tab" aria-controls="pills-flight-three" aria-selected="true">
+                    <button
+                        class="nav-link nav-link-two fw-medium tw-text-405 text-black d-flex align-items-center tw-gap-105 tw-py-1 tw-px-6 border-neutral-300 border rounded-pill"
+                        id="pills-flight-threeSix-tab" data-bs-toggle="pill" data-bs-target="#pills-flight-threeSix"
+                        type="button" role="tab" aria-controls="pills-flight-threeSix" aria-selected="true">
                         Flight
                     </button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link nav-link-two fw-medium tw-text-405 text-black d-flex align-items-center tw-gap-105 tw-py-1 tw-px-6 border-neutral-300 border rounded-pill" id="pills-dahsborad-two-tab" data-bs-toggle="pill" data-bs-target="#pills-dahsborad-two" type="button" role="tab" aria-controls="pills-dahsborad-two" aria-selected="false">
+                    <button
+                        class="nav-link nav-link-two fw-medium tw-text-405 text-black d-flex align-items-center tw-gap-105 tw-py-1 tw-px-6 border-neutral-300 border rounded-pill"
+                        id="pills-dahsborad-twoSix-tab" data-bs-toggle="pill" data-bs-target="#pills-dahsborad-twoSix"
+                        type="button" role="tab" aria-controls="pills-dahsborad-twoSix" aria-selected="false">
                         09:45 PM
                     </button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link nav-link-two fw-medium tw-text-405 text-black d-flex align-items-center tw-gap-105 tw-py-1 tw-px-6 border-neutral-300 border rounded-pill" id="pills-deashbroad-two-tab" data-bs-toggle="pill" data-bs-target="#pills-deashbroad-two" type="button" role="tab" aria-controls="pills-deashbroad-two" aria-selected="false">
+                    <button
+                        class="nav-link nav-link-two fw-medium tw-text-405 text-black d-flex align-items-center tw-gap-105 tw-py-1 tw-px-6 border-neutral-300 border rounded-pill"
+                        id="pills-deashbroad-twoSix-tab" data-bs-toggle="pill" data-bs-target="#pills-deashbroad-twoSix"
+                        type="button" role="tab" aria-controls="pills-deashbroad-twoSix" aria-selected="false">
                         09:45 PM
                     </button>
                 </li>
             </ul>
+            <div class="d-flex align-items-center justify-content-center overflow-hidden">
+                <div class="cotnainer max-w-1400-px w-100">
+                    <div class="tab-content" id="pills-tabTenContent">
+                        <div class="tab-pane fade show active" id="pills-dashboardSix" role="tabpanel"
+                            aria-labelledby="pills-dashboardSix-tab" tabindex="0">
+                            @@include('../partials/_flight-dashboard-tab.html')
+                        </div>
+                        <div class="tab-pane fade" id="pills-flight-threeSix" role="tabpanel"
+                            aria-labelledby="pills-flight-threeSix-tab" tabindex="0">
+                            @@include('../partials/_flight-dashboard-tab.html')
+                        </div>
+                        <div class="tab-pane fade" id="pills-dahsborad-twoSix" role="tabpanel"
+                            aria-labelledby="pills-dahsborad-twoSix-tab" tabindex="0">
+                            @@include('../partials/_flight-dashboard-tab.html')
+                        </div>
+                        <div class="tab-pane fade" id="pills-deashbroad-twoSix" role="tabpanel"
+                            aria-labelledby="pills-deashbroad-twoSix-tab" tabindex="0">
+                            @@include('../partials/_flight-dashboard-tab.html')
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>

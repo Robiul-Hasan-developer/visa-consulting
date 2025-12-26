@@ -3,13 +3,13 @@
     <div class="d-flex justify-content-center w-100">
         <div
             class="max-w-820-px bg-white tw-py-5 tw-px-4 tw-rounded-2xl d-flex align-items-center tw-gap-3 justify-content-center tw-visa-banner-shadow w-100 position-relative border border-neutral-200">
-            <ul class="nav nav-pills nav-pills-two mb-3 d-flex align-items-center tw-gap-3 flex-wrap" id="pills-tab"
+            <ul class="nav nav-pills nav-pills-two mb-3 d-flex align-items-center tw-gap-3 flex-wrap" id="pills-tabTwo"
                 role="tablist">
                 <li class="nav-item" role="presentation">
                     <button
                         class="nav-link nav-link-two active fw-medium tw-text-405 text-black d-flex text-capitalize tw-px-5 rounded-pill align-items-center tw-gap-105"
-                        id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab"
-                        aria-controls="pills-home" aria-selected="true">
+                        id="pills-home-four-tab" data-bs-toggle="pill" data-bs-target="#pills-home-four" type="button" role="tab"
+                        aria-controls="pills-home-four" aria-selected="true">
                         <span class="d-flex">
                             <i class="ph ph-airplane-takeoff"></i>
                         </span>
@@ -19,8 +19,8 @@
                 <li class="nav-item" role="presentation">
                     <button
                         class="nav-link nav-link-two fw-medium tw-text-405 text-black d-flex text-capitalize tw-px-5 rounded-pill hover-text-main-600 align-items-center tw-gap-105"
-                        id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button"
-                        role="tab" aria-controls="pills-profile" aria-selected="false">
+                        id="pills-profile-four-tab" data-bs-toggle="pill" data-bs-target="#pills-profile-four" type="button"
+                        role="tab" aria-controls="pills-profile-four" aria-selected="false">
                         <span class="d-flex">
                             <i class="ph ph-bank"></i>
                         </span>
@@ -30,8 +30,8 @@
                 <li class="nav-item" role="presentation">
                     <button
                         class="nav-link nav-link-two fw-medium tw-text-405 text-black d-flex text-capitalize tw-px-5 rounded-pill hover-text-main-600 align-items-center tw-gap-105"
-                        id="pills-tour-tab" data-bs-toggle="pill" data-bs-target="#pills-tour" type="button" role="tab"
-                        aria-controls="pills-tour" aria-selected="false">
+                        id="pills-tour-four-tab" data-bs-toggle="pill" data-bs-target="#pills-tour-four" type="button" role="tab"
+                        aria-controls="pills-tour-four" aria-selected="false">
                         <span class="d-flex">
                             <i class="ph ph-tree-palm"></i>
                         </span>
@@ -41,8 +41,8 @@
                 <li class="nav-item" role="presentation">
                     <button
                         class="nav-link nav-link-two fw-medium tw-text-405 text-black d-flex text-capitalize tw-px-5 rounded-pill hover-text-main-600 align-items-center tw-gap-105"
-                        id="pills-rental-tab" data-bs-toggle="pill" data-bs-target="#pills-rental" type="button"
-                        role="tab" aria-controls="pills-rental" aria-selected="false">
+                        id="pills-rental-four-tab" data-bs-toggle="pill" data-bs-target="#pills-rental-four" type="button"
+                        role="tab" aria-controls="pills-rental-four" aria-selected="false">
                         <span class="d-flex">
                             <i class="ph ph-car"></i>
                         </span>
@@ -56,21 +56,45 @@
 
 <div class="d-flex align-items-center justify-content-center">
     <div class="cotnainer max-w-1400-px w-100">
-        <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+        <div class="tab-content" id="pills-tabTwoContent">
+            <div class="tab-pane fade show active" id="pills-home-four" role="tabpanel" aria-labelledby="pills-home-four-tab"
                 tabindex="0">
-                @@include('../partials/_sidebar-banner-tab.html')
+                @@include('../partials/_sidebar-banner-tab.html', {
+                'oneWayId': 'oneWayIdOne',
+                'roundWayId': 'roundWayOne',
+                'multicityId': 'multicityIdOne',
+                'economyId': 'economyIdOne',
+                'businessId': 'businessOneId',
+                })
             </div>
-            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+            <div class="tab-pane fade" id="pills-profile-four" role="tabpanel" aria-labelledby="pills-profile-four-tab"
                 tabindex="0">
-                @@include('../partials/_sidebar-banner-tab.html')
+                @@include('../partials/_sidebar-banner-tab.html', {
+                'oneWayId': 'TwoWayIdTwo',
+                'roundWayId': 'roundWayTwo',
+                'multicityId': 'multicityIdTwo',
+                'economyId': 'economyIdTwo',
+                'businessId': 'businessTwoId',
+                })
             </div>
-            <div class="tab-pane fade" id="pills-tour" role="tabpanel" aria-labelledby="pills-tour-tab" tabindex="0">
-                @@include('../partials/_sidebar-banner-tab.html')
+            <div class="tab-pane fade" id="pills-tour-four" role="tabpanel" aria-labelledby="pills-tour-four-tab" tabindex="0">
+                @@include('../partials/_sidebar-banner-tab.html', {
+                'oneWayId': 'ThreeWayIdThree',
+                'roundWayId': 'roundWayThree',
+                'multicityId': 'multicityIdThree',
+                'economyId': 'economyIdThree',
+                'businessId': 'businessThreeId',
+                })
             </div>
-            <div class="tab-pane fade" id="pills-rental" role="tabpanel" aria-labelledby="pills-rental-tab"
+            <div class="tab-pane fade" id="pills-rental-four" role="tabpanel" aria-labelledby="pills-rental-four-tab"
                 tabindex="0">
-                @@include('../partials/_sidebar-banner-tab.html')
+                @@include('../partials/_sidebar-banner-tab.html', {
+                'oneWayId': 'FourWayIdFour',
+                'roundWayId': 'roundWayFour',
+                'multicityId': 'multicityIdFour',
+                'economyId': 'economyIdFour',
+                'businessId': 'businessFourId',
+                })
             </div>
         </div>
     </div>
