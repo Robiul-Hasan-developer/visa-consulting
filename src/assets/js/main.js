@@ -438,7 +438,6 @@
       speed: 1500,
       grabCursor: true,
       spaceBetween: 20,
-      loop: true,
       slidesPerView: 6,
       breakpoints: {
         300: {
@@ -610,7 +609,6 @@
       }
     });
     // ========================= Increment & Decrement Js End =====================
-    
   });
   // ==========================================
   //      End Document Ready function
