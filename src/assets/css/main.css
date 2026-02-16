@@ -5254,6 +5254,14 @@ input:focus, input:focus-visible {
     margin-block-start: -56px;
 }
 
+.tw--me-40-px {
+    margin-inline-end: -40px;
+}
+
+.tw--ms-40-px {
+    margin-inline-start: -40px;
+}
+
 .my-120 {
     margin-block-start: 60px;
     margin-block-end: 60px;
@@ -7679,6 +7687,10 @@ input:focus, input:focus-visible {
 
 .tw-z-999 {
     z-index: 999;
+}
+
+.z-1 {
+    z-index: 1;
 }
 
 /* Z index css End */
