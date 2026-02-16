@@ -1,4 +1,8 @@
 /* ======================== Group Css Start =============================== */
+.text-invert-white {
+  filter: brightness(0) invert(1);
+}
+
 .group {
   &:hover {
     .group-hover-text {
@@ -13,9 +17,11 @@
       &-purple-600 {
         color: var(--purple-600) !important;
       }
+
       &-green-600 {
         color: var(--green-600) !important;
       }
+
       &-black {
         color: #000000 !important;
       }
@@ -45,6 +51,7 @@
       &-gradient-6 {
         background: linear-gradient(179.7deg, rgba(16, 49, 83, 0) -4.32%, rgba(16, 49, 83, 0) 14.2%, rgba(16, 49, 83, 0) 37.72%, rgba(16, 49, 83, 0.22) 53.77%, rgba(16, 49, 83, 0.82232) 67.68%, #103153 78.41%) !important;
       }
+
       &-gradient-flight {
         background: linear-gradient(180deg, rgba(0, 47, 95, 0.59) 0%, #000000 100%);
       }

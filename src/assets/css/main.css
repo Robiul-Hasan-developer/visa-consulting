@@ -4304,6 +4304,10 @@ input:focus, input:focus-visible {
 
 /* Gap Css end */
 /* ======================== Group Css Start =============================== */
+.text-invert-white {
+    filter: brightness(0) invert(1);
+}
+
 .group:hover .group-hover-text-white {
     color: hsl(var(--white)) !important;
 }
