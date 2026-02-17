@@ -7210,6 +7210,14 @@ input:focus, input:focus-visible {
     border-radius: 24px 24px 0 0;
 }
 
+.rounded-pill-style-one {
+    border-radius: 50rem 50rem 6rem 6rem;
+}
+
+.rounded-pill-style-two {
+    border-radius: 6rem 6rem 50rem 50rem;
+}
+
 /* Rotate Css Start */
 .tw-hover-rotate-360:hover {
     transform: rotate(260deg);
@@ -7388,6 +7396,10 @@ input:focus, input:focus-visible {
 
 .shadow-top {
     box-shadow: 0 -10px 24px -21px rgba(13, 13, 13, 0.14);
+}
+
+.shadow-new {
+    box-shadow: 0px 4px 15px 0px #0000000F;
 }
 
 /* Box shadow End */

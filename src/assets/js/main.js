@@ -488,7 +488,7 @@
     // ============================== features two js start ==========================
     var swiper = new Swiper(".features-two-slider", {
       slidesPerView: 6,
-      spaceBetween: 30,
+      spaceBetween: 16,
       speed: 1500,
       loop: true,
       autoplay: true,
