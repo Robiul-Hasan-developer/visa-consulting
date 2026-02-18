@@ -7422,6 +7422,10 @@ input:focus, input:focus-visible {
     box-shadow: 0px 4px 15px 0px #0000000F;
 }
 
+.bg-dark-navy-blue {
+    background-color: #103153;
+}
+
 /* Box shadow End */
 /* transition Css Class start */
 .tw-transition {
@@ -8768,6 +8772,21 @@ input:focus, input:focus-visible {
 }
 
 /* ======================== brand section start ======================== */
+.banner-three-img {
+    position: absolute;
+    inset-inline-end: 0;
+    inset-block-start: 0;
+    height: calc(100% - 60px);
+    margin: 30px;
+    max-width: 40%;
+}
+
+@media (min-width: 992px) {
+    .banner-three-content {
+        max-width: 56%;
+    }
+}
+
 .brand-grid-wrapper {
     display: grid !important;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;

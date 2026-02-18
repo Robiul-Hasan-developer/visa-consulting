@@ -1,4 +1,19 @@
 /* ======================== brand section start ======================== */
+.banner-three-img {
+    position: absolute;
+    inset-inline-end: 0;
+    inset-block-start: 0;
+    height: calc(100% - 60px);
+    margin: 30px;
+    max-width: 40%;
+}
+.banner-three-content {
+    @media (min-width: 992px) {
+        max-width: 56%;
+    }
+}
+
+
 .brand-grid-wrapper {
     display: grid !important;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
