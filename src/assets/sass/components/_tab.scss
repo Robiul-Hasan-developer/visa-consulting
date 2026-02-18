@@ -14,11 +14,14 @@
 }
 
 
+.nav-pills .nav-link:hover {
+    color: var(--neutral-900);
+}
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     background-color: transparent !important;
-    color: #1A4137 !important; 
+    color: var(--main-600) !important; 
     font-weight: 600 !important;
-    border-bottom-color: #3D66F8;
+    border-bottom-color: var(--main-600);
     border-radius: 0;
 }
 
@@ -27,7 +30,6 @@
     background-color: #00CC99 !important;
     color: #fff !important;
     font-weight: 600 !important;
-    // border-bottom-color: #3D66F8;
     border-radius: 20px;
 }
 /* ================================= Tab Css End =========================== */
