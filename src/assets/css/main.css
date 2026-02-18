@@ -4151,8 +4151,16 @@ input:focus, input:focus-visible {
     height: 630px;
 }
 
+.tw-h-186-px {
+    height: 186px;
+}
+
 .tw-h-650-px {
     height: 650px;
+}
+
+.tw-h-712-px {
+    height: 712px;
 }
 
 .tw-min-h-184-px {
@@ -7671,6 +7679,10 @@ input:focus, input:focus-visible {
     width: 165px;
 }
 
+.tw-w-186-px {
+    width: 186px;
+}
+
 .tw-w-200-px {
     width: 200px;
 }
@@ -8712,9 +8724,9 @@ input:focus, input:focus-visible {
 .play-button::before {
     position: absolute;
     content: "";
-    width: 100px;
-    height: 100px;
-    background: #FFFFFF4D;
+    width: inherit;
+    height: inherit;
+    background: inherit;
     border-radius: 50%;
     z-index: -1;
     -webkit-animation: animate 2.3s ease-out infinite;
